@@ -17,15 +17,23 @@ function toggleDarkMode() {
     document.body.style.color = '#ced4da'; // Light gray for text
     
     // Change text color for all paragraphs and headings
-    const elements = document.querySelectorAll(['p, h1, h2, h3, h4, h5, h6,span,div']);
+    const elements = document.querySelectorAll(['p, h1, h2, h3, h4, h5, h6']);
     elements.forEach(element => {
-      element.style.color = '#f8f9fa'; // Light gray text
+      element.style.color = '#ced4da'; // Light gray text
+    //   element.style.color = '#f8f9fa'; // Light gray text
+    });
+    const attribute = document.querySelectorAll(['span,div']);
+    attribute.forEach(element => {
+    //   element.style.color = '#212529'; // Light gray text
+      element.style.color = '#343a40'; // Light gray text
+    //   element.style.color = '#f8f9fa'; // Light gray text
     });
     
     // Change link colors
     const links = document.querySelectorAll('a');
     links.forEach(link => {
-      link.style.color = '#caf0f8'; // Soft blue for links
+      link.style.color = '#7cb7ff'; // Soft blue for links
+    //   link.style.color = '#caf0f8'; // Soft blue for links
     //   link.style.textDecoration = 'underline'; // Optional underline for clarity
     });
   } else {
